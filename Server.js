@@ -3,22 +3,22 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 require('dotenv').config();
 
-// MongoDB compass connection
-const dburl = "mongodb://localhost:27017/sdpproject"
-mongoose.connect(dburl).then(() => {
-    console.log("Connected to DB Successfully")
-}).catch((err) => {
-    console.log(err.message)
-});
-
-
-// //MongoDB Atlas
-// const dburl = "mongodb+srv://klu:klu@cluster0.y54xjg2.mongodb.net/sdpproject?retryWrites=true&w=majority"
+// // MongoDB compass connection
+// const dburl = "mongodb://localhost:27017/sdpproject"
 // mongoose.connect(dburl).then(() => {
-//     console.log("Connected to MongoDB Atlas DB Successfully")
+//     console.log("Connected to DB Successfully")
 // }).catch((err) => {
 //     console.log(err.message)
 // });
+
+
+//MongoDB Atlas
+const dburl = "mongodb+srv://klu:klu@cluster0.y54xjg2.mongodb.net/sdpproject?retryWrites=true&w=majority"
+mongoose.connect(dburl).then(() => {
+    console.log("Connected to MongoDB Atlas DB Successfully")
+}).catch((err) => {
+    console.log(err.message)
+});
 
 
 const app = express()
