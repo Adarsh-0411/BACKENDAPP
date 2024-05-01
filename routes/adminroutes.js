@@ -1,4 +1,3 @@
-//admin routes
 const admincontroller = require("../controllers/admincontroller")
 
 const express = require("express")

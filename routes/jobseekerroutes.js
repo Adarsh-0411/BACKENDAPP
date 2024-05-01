@@ -1,5 +1,3 @@
-//job seeker routes
-
 const jobseekercontroller = require("../controllers/jobseekercontroller")
 
 const express = require("express")
@@ -13,6 +11,5 @@ jobseekerrouter.get("/jobseekerprofile/:email",jobseekercontroller.jobseekerprof
 jobseekerrouter.get("/viewjobsbyjobseeker",jobseekercontroller.viewjobsbyjobseeker)
 jobseekerrouter.post("/applyjob",jobseekercontroller.applyjob)
 jobseekerrouter.get("/appliedjobs/:email",jobseekercontroller.appliedjobs)
-
 
 module.exports = jobseekerrouter

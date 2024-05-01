@@ -13,7 +13,7 @@ const jobApplicantSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    //this value will be taken from Job Seeker model
+
     jobseekeremail: {
         type: String,
         required: true

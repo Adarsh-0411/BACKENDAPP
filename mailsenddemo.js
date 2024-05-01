@@ -11,9 +11,9 @@ const gmailTransporter = nodemailer.createTransport({
 
 
 const mailOptions = {
-    from: 'suryakiranmtechcse@gmail.com',
+    from: 'tnsadarsh@gmail.com ',
     to: '2200032477@kluniversity.in',
-    subject: 'MSWD PROJECT TEST MAIL',
+    subject: 'MSWD PROJECT MAIL',
     html: '<font color=red>Hello </font>'
 };
 
